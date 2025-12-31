@@ -37,7 +37,7 @@ def check_overdue_loans():
         
         send_mail(
             subject="Overdue Book loan.",
-            message="Please return your book."
+            message="Please return your book.",
             from_email=settings.DEFAULT_FROM_EMAIL,
             fail_silently=False,
             recipient_list=[email]
